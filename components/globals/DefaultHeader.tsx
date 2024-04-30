@@ -5,25 +5,25 @@ import DefaultButton from "./DefaultButton";
 
 const DefaultHeader = () => {
   return (
-    <header className="default-container flex flex-row items-center justify-between w-full h-[7vw]">
+    <header className="default-container flex flex-row items-center justify-between w-full lg:h-[7vw] h-[10vh]">
       <Link
         href="/"
-        className="max-w-[30vw] flex flex-row items-center justify-start h-full"
+        className="w-[128px] flex flex-row items-center justify-start h-full"
       >
         <Image
           src="/logo-secondary-color.png"
           width={1024}
           height={1024}
           alt="Solid Constructions Logo"
-          className="h-[60%] max-w-[5vw] aspect-square object-contain object-center"
+          className="h-[60%] lg:max-w-[5vw] min-w-[32px] aspect-square object-contain object-center"
         ></Image>
-        <h1 className="text-secondary font-black text-[40px] leading-4 mt-2">
+        <h1 className="text-secondary font-black lg:text-[40px] text-[24px] leading-4 mt-2">
           Solid
           <br />
           <span className="text-sm leading-4">Constructions</span>
         </h1>
       </Link>
-      <nav>
+      <nav className="hidden lg:flex">
         <ul className="flex gap-4">
           {NAV_LINKS.map((tab, i) => (
             <Link
@@ -40,6 +40,7 @@ const DefaultHeader = () => {
           ))}
         </ul>
       </nav>
+      <div className="hidden lg:flex">
       <DefaultButton
         type="shadow"
         onClick={() => {
@@ -47,6 +48,7 @@ const DefaultHeader = () => {
         }}
         label="Book Meating"
       />
+      </div>
     </header>
   );
 };
