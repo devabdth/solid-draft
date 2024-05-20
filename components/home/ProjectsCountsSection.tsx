@@ -2,7 +2,7 @@ import { PROJECTS_COUNTS } from "@/prefs/consts";
 import Image from "next/image";
 const ProjectsCountsSection = () => {
   return (
-    <section className="w-full h-[65vw] flex flex-col items-center justify-between gap-8 bg-variant py-12">
+    <section className="w-full h-[980px] flex flex-col items-center justify-between gap-8 bg-variant py-12">
       <h2 className="text-6xl text-primary font-extrabold px-72 text-center">
         Good Things Happen to
         <br />
@@ -39,7 +39,7 @@ const ProjectsCountsSection = () => {
         {PROJECTS_COUNTS.map((projectCount, i) => (
           <div className="flex flex-col items-center justify-between gap-2 h-[7vw]" key={i}>
             <h4 className="text-6xl font-black text-secondary">{projectCount.count}</h4>
-            <p className="text-md font-semibold text-primary px-16 text-center">{projectCount.label}</p>
+            <p className="text-sm font-semibold text-primary px-16 text-center">{projectCount.label}</p>
           </div>
         ))}
       </div>

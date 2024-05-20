@@ -1,7 +1,7 @@
 import Image from "next/image";
 const TestmonialsSection = () => {
   return (
-    <section className="w-full h-[40vw] relative">
+    <section className="w-full h-[448px] relative">
       <Image
         src="/testmonials-background.jpg"
         alt="What Our Cliens Say"
@@ -55,12 +55,12 @@ const TestmonialsSection = () => {
             alt="Favourite Filled Icon"
           ></Image>
         </div>
-        <p className="font-normal text-md text-variant/75 -mt-[1vw]">
+        <p className="font-normal text-md text-variant/75">
           9.9 / 10
         </p>
         <div className="w-[30%] h-[1px] rounded-full bg-variant"></div>
         <p className="font-semibold text-md text-variant">Abdullah T. Adam</p>
-        <p className="font-normal text-md text-variant/75 -mt-[1.5vw]">
+        <p className="font-normal text-md text-variant/75">
           @treguru
         </p>
       </div>

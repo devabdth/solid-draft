@@ -13,7 +13,7 @@ import Image from "next/image";
 import Link from "next/link";
 const DefaultFooter = () => {
   return (
-    <footer className="bg-primary w-full default-container h-[20vw] lg:flex hidden flex-col items-center justify-center">
+    <footer className="bg-primary w-full default-container h-[320px] lg:flex hidden flex-col items-center justify-center">
       <div className="flex flex-row items-center justify-between w-full h-full gap-16 px-4 py-6">
         <div className="flex min-w-[30vw] h-full items-start justify-center flex-col px-2 py-2 gap-2">
           <Link
